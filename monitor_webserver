@@ -1,7 +1,10 @@
 #!/usr/bin/python3 
 
+#importing the urllib to send request and get status code
 import urllib.request
 result=urllib.request.urlopen("http://<ip/dnsof webserver>").getcode()
+
+# running while loop to run test all the time
 while True:
   if result == 200:
     print("webserver is running")
