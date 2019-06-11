@@ -1,0 +1,9 @@
+#!/usr/bin/python3 
+
+import urllib.request
+result=urllib.request.urlopen("http://<ip/dnsof webserver>").getcode()
+while True:
+  if result == 200:
+    print("webserver is running")
+  else:
+    print("issue with server")
